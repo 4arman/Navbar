@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Fira+Sans&family=Fjalla+One&family=GFS+Neohellenic&family=Heebo:wght@300;500&family=Inter:wght@300&family=Lexend+Giga&family=Merriweather:wght@900&family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans&family=Oxygen:wght@700&family=Poppins&family=Prompt&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Tektur:wght@600&family=Tilt+Prism&family=Voces&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_YdqgkUGdrYekdhXb0f1yRol7kxAuXEKh8qLc1i_qK1xgGAQxcx8whpaEsaqD1u-N0AR-O80uVgNgVweKQGbwed1aMmebEwHXPPCxEoktsUbTVgWeaLOgD1ikgjuKygvdCZ2lgBcfxTfUXHI0I9a11uXzp8HeCUGmfKxKyHzhCoMda4buYXNk360dgA/s1920/02052022-no-birds-v2-MINIMALIST-LANDSCAPE.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+}
+
+.header a img {
+    height: 80px;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: 500ms width ease-in-out;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
